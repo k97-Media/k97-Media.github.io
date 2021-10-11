@@ -1,0 +1,19 @@
+---
+---
+
+// Colors
+$primary: #ff8303;
+$primary-dark: #ff5722;
+$secondary: #f88379;
+$black: #2f2f41;
+$white: #f8f5f1;
+$flash-success-bg: #84fc84;
+$flash-success-fn: #0c3307;
+$flash-error-bg: #fb6b69;
+$flash-error-fn: #950503;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: lighten($primary, 10%);
+$link-hover-decoration: underline;
