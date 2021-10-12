@@ -1,0 +1,85 @@
+// Colors
+$primary: #ff8303;
+$primary-dark: #ff5722;
+$secondary: #f88379;
+$black: #1c1c22;
+$white: #f8f5f1;
+$flash-success-bg: #84fc84;
+$flash-success-fn: #0c3307;
+$flash-error-bg: #fb6b69;
+$flash-error-fn: #950503;
+$shadow-color:rgb(44, 43, 43);
+$shadow-color-light: #ccc;
+
+// Links
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: lighten($primary, 10%);
+$link-hover-decoration: underline;
+
+@font-face {
+	font-family: Goran;
+	src: url(../fonts/KGoran.ttf);
+}
+
+@font-face {
+	font-family: Righteus;
+	src: url(../fonts/Righteous-Regular.ttf);
+}
+
+//fonts
+$primary-text-font: "Goran";
+$primary-logo-font: "Righteus";
+
+// reset default styles
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.dark-mode{
+	background-color:lighten( $black, 5%) !important;
+}
+
+body {
+	font-family: $primary-text-font;
+	font-size: 1.2rem;
+	color: $primary-dark;
+	background:$white;
+	max-height: 100%;
+	width: 100%;
+}
+
+.logo{
+	@include d-shadow-logo;
+	font-family: $primary-logo-font;
+	font-size: 5rem;
+	color: $primary;
+	margin-bottom: 2rem;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	max-height: 70%;
+	margin: 30% auto;
+	text-align: center;
+	height: fit-content;
+}
+h3{
+	font-size: 1.8rem;
+}
+
+a{
+	color: $primary-dark;
+	text-decoration: none;
+	&:hover{
+		cursor: pointer;
+		color: $primary;
+		transition: all .4s ease-in-out;
+	}
+}

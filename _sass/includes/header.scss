@@ -1,0 +1,9 @@
+#theme-toogler{
+  font-size: 2.5rem;
+  margin: .4em;
+  width: fit-content;
+  &:hover{
+    cursor: pointer;
+    color: $primary;
+  }
+}

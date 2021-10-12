@@ -1,41 +1,8 @@
 ---
 ---
+@import "mixings.scss";
+@import "general.scss";
+@import "includes/socials.scss";
+@import "includes/header.scss";
 
-// Colors
-$primary: #ff8303;
-$primary-dark: #ff5722;
-$secondary: #f88379;
-$black: #2f2f41;
-$white: #fff8e5;
-$flash-success-bg: #84fc84;
-$flash-success-fn: #0c3307;
-$flash-error-bg: #fb6b69;
-$flash-error-fn: #950503;
 
-// Links
-$link-color: $primary;
-$link-decoration: none;
-$link-hover-color: lighten($primary, 10%);
-$link-hover-decoration: underline;
-
-@font-face {
-	font-family: Goran;
-	src: url(../fonts/KGoran.ttf);
-}
-
-//fonts
-$primary-text-font: "Goran";
-
-// reset default styles
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: $primary-text-font;
-	font-size: 1.2rem;
-	color: $primary-dark;
-	background-color: $white;
-}
