@@ -5,7 +5,12 @@
   <div class="container">
     <h2 class="logo">{{site.general.title}}</h2>
     {{site.general.description}}
-    {{content}}
+    <div class="socials">
+      {% for account in site.data.social%}
+        <a href="{{account.url}}" target="_blank"><ion-icon name="logo-{{account.name}}"></ion-icon></a>
+      {%endfor%}
+    </div>
   </div>
+  <ion-icon name="logo-facebook"></ion-icon>
 </body>
 </html>
