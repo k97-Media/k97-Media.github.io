@@ -2,6 +2,10 @@
   {%include head.html%}
 <body>
   {%include header.html%}
-  {{content}}
+  <div class="container">
+    <h2 class="logo">{{site.general.title}}</h2>
+    {{site.general.description}}
+    {{content}}
+  </div>
 </body>
 </html>
