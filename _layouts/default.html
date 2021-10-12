@@ -1,15 +1,12 @@
 <!DOCTYPE html>
   {%include head.html%}
-<body>
+<body id="body">
   {%include header.html%}
   <div class="container">
     <h2 class="logo">{{site.general.title}}</h2>
-    {{site.general.description}}
-    <div class="socials">
-      {% for account in site.data.social%}
-        <a href="{{account.url}}" target="_blank"><ion-icon name="logo-{{account.name}}"></ion-icon></a>
-      {%endfor%}
-    </div>
+    <h3>{{site.general.description}}</h3>
+    {%include socials.html%}
   </div>
+  {%include footer.html%}
 </body>
 </html>
