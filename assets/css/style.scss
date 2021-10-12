@@ -6,7 +6,7 @@ $primary: #ff8303;
 $primary-dark: #ff5722;
 $secondary: #f88379;
 $black: #2f2f41;
-$white: #f8f5f1;
+$white: #fff8e5;
 $flash-success-bg: #84fc84;
 $flash-success-fn: #0c3307;
 $flash-error-bg: #fb6b69;
@@ -25,3 +25,17 @@ $link-hover-decoration: underline;
 
 //fonts
 $primary-text-font: "Goran";
+
+// reset default styles
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $primary-text-font;
+	font-size: 1.2rem;
+	color: $primary-dark;
+	background-color: $white;
+}
