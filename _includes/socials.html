@@ -1,0 +1,5 @@
+<div class="socials">
+  {% for account in site.data.social%}
+    <a href="{{account.link}}" target="_blank">{{account.name}}</a>
+  {%endfor%}
+</div>
