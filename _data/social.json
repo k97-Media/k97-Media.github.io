@@ -1,18 +1,18 @@
 [
 	{
-		"name": "github",
+		"name": "Github",
+		"link": "https://github.com/k97-Media"
+	},
+	{
+		"name": "Instagram",
+		"link": "https://www.instagram.com/k97media/?igshid=1f5uecjm3zoau"
+	},
+	{
+		"name": "Facebook",
 		"link": ""
 	},
 	{
-		"name": "instagram",
-		"link": ""
-	},
-	{
-		"name": "facebook",
-		"link": ""
-	},
-	{
-		"name": "youtube",
-		"link": ""
+		"name": "Youtube",
+		"link": "https://www.youtube.com/channel/UC9j6pieJxlXmpq0k7kV1VDg"
 	}
 ]
