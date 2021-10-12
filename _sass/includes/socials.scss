@@ -1,14 +1,13 @@
-.socials{
-  margin: 3rem auto;
-  a{
-    margin: 0 1rem;
-    padding: 1em;
-    border-radius: 1rem;
-    &:hover{
-      @include d-shadow-link;
-      color: $primary;
-      transition: all .5s ease-in-out;
-    }
-  }
-  
+.socials {
+	margin: 3rem auto;
+	a {
+		margin: 0 1rem;
+		padding: 1em;
+		border-radius: 1rem;
+		&:hover {
+			@include d-shadow;
+			color: $primary;
+			transition: all 0.5s ease-in-out;
+		}
+	}
 }

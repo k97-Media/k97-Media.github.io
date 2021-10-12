@@ -8,14 +8,11 @@ $flash-success-bg: #84fc84;
 $flash-success-fn: #0c3307;
 $flash-error-bg: #fb6b69;
 $flash-error-fn: #950503;
-$shadow-color:rgb(44, 43, 43);
-$shadow-color-light: #ccc;
+$shadow-color: rgb(44, 43, 43);
 
 // Links
 $link-color: $primary;
-$link-decoration: none;
 $link-hover-color: lighten($primary, 10%);
-$link-hover-decoration: underline;
 
 @font-face {
 	font-family: Goran;
@@ -29,7 +26,7 @@ $link-hover-decoration: underline;
 
 //fonts
 $primary-text-font: "Goran";
-$primary-logo-font: "Righteus";
+$secondary-text-font: "Righteus";
 
 // reset default styles
 * {
@@ -38,48 +35,49 @@ $primary-logo-font: "Righteus";
 	box-sizing: border-box;
 }
 
-.dark-mode{
-	background-color:lighten( $black, 5%) !important;
+.dark-mode {
+	background-color: lighten($black, 5%) !important;
 }
 
 body {
 	font-family: $primary-text-font;
 	font-size: 1.2rem;
 	color: $primary-dark;
-	background:$white;
+	background: $white;
 	max-height: 100%;
 	width: 100%;
 }
 
-.logo{
-	@include d-shadow-logo;
-	font-family: $primary-logo-font;
+.logo {
+	@include d-shadow;
+	font-family: $secondary-text-font;
 	font-size: 5rem;
 	color: $primary;
 	margin-bottom: 2rem;
 }
 
-.container{
+.container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 80%;
 	max-height: 70%;
-	margin: 30% auto;
+	margin: 20% auto;
 	text-align: center;
 	height: fit-content;
 }
-h3{
+h3 {
 	font-size: 1.8rem;
 }
 
-a{
+a {
 	color: $primary-dark;
 	text-decoration: none;
-	&:hover{
+	font-family: $secondary-text-font;
+	&:hover {
 		cursor: pointer;
 		color: $primary;
-		transition: all .4s ease-in-out;
+		transition: all 0.4s ease-in-out;
 	}
 }
