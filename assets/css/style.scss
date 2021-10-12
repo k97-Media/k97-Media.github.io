@@ -17,3 +17,11 @@ $link-color: $primary;
 $link-decoration: none;
 $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
+
+@font-face {
+	font-family: Goran;
+	src: url(../fonts/KGoran.ttf);
+}
+
+//fonts
+$primary-text-font: "Goran";
