@@ -38,6 +38,15 @@ $secondary-text-font: "Righteus";
 .dark-mode {
 	background-color: lighten($black, 5%) !important;
 }
+.dark-mode-logo{
+	@include d-shadow-light;
+}
+
+.dark-mode-link{
+	&:hover{
+		@include d-shadow-light;
+	}
+}
 
 body {
 	font-family: $primary-text-font;
