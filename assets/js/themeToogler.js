@@ -1,4 +1,4 @@
-const icon = document.getElementById("theme-toogler")
+const toogler = document.getElementById("toogle")
 const logo = document.getElementById("logo")
 const socialLinks = document.querySelectorAll(".social-link")
 let darkTheme = false
@@ -9,18 +9,18 @@ const toogleDark = () => {
   body.classList.add("dark-mode")
   socialLinks.forEach((link)=>link.classList.add("dark-mode-link"))
   logo.classList.add("dark-mode-logo")
-  icon.firstChild.setAttribute("name", "sunny-outline")
+  toogler.classList.add("toogler-dark")
 }
 
 const toogleLight = () =>{
   body.classList.remove("dark-mode")
   socialLinks.forEach((link)=>link.classList.remove("dark-mode-link"))
   logo.classList.remove("dark-mode-logo")
-  icon.firstChild.setAttribute("name", "moon-outline")
+  toogler.classList.remove("toogler-dark")
 }
 
 
-icon.addEventListener("click", () => {
+toogler.addEventListener("click", () => {
   darkTheme = !darkTheme
   localStorage.setItem("theme", `${darkTheme? "dark" : "light"}`)
   localStorage.getItem("theme") == "dark" ? toogleDark() : toogleLight()

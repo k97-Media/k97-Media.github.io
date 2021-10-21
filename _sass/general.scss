@@ -10,6 +10,8 @@ $flash-error-bg: #fb6b69;
 $flash-error-fn: #950503;
 $shadow-color: rgb(44, 43, 43);
 $shadow-color-light: #636060;
+$steel: #5c5a5a;
+$dark-white: #c3bcb3;
 
 // Links
 $link-color: $primary;
@@ -89,5 +91,42 @@ a {
 		cursor: pointer;
 		color: $primary;
 		transition: all 0.4s ease-in-out;
+	}
+}
+
+
+
+.toogler{
+	input {
+		width: 5rem;
+		height: 2rem;
+		margin: 1rem;
+		background: $black;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		border-radius: 20px;
+		cursor: pointer;
+		
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1.9rem;
+			width: 1.9rem;
+			border-radius: 50%;
+			background: $primary;
+			transform: translate(0.04rem, 0.1rem);
+			transition: 0.3s linear;
+		}
+		
+	}
+}
+
+.toogler-dark{
+	background: $steel !important;
+	&::after {
+		inset: unset !important;
+		background: $dark-white !important;
+		transform: translate(3rem, 0.1rem) !important;
 	}
 }
