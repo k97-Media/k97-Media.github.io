@@ -1,9 +1,33 @@
-#theme-toogler{
-  font-size: 2.5rem;
-  margin: .4em;
-  width: fit-content;
-  &:hover{
-    cursor: pointer;
-    color: $primary;
-  }
+.toogler {
+	input {
+		width: 5rem;
+		height: 2rem;
+		margin: 1rem;
+		background: $black;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		border-radius: 20px;
+		cursor: pointer;
+
+		&::after {
+			content: "";
+			position: absolute;
+			height: 1.9rem;
+			width: 1.9rem;
+			border-radius: 50%;
+			background: $primary;
+			transform: translate(0.04rem, 0.1rem);
+			transition: 0.3s linear;
+		}
+	}
+}
+
+.toogler-dark {
+	background: $steel !important;
+	&::after {
+		inset: unset !important;
+		background: $dark-white !important;
+		transform: translate(3rem, 0.1rem) !important;
+	}
 }
