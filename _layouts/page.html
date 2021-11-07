@@ -1,5 +1,4 @@
-{%if page.id == "topics"%} {{content}} {{content}} {%for topic in
-site.data.topics%}
+{%if page.id == "topics"%} {{content}} {%for topic in site.data.topics%}
 <div class="topic">
 	<h2>{{topic.title}}</h2>
 	{%if topic.pic-url%}
