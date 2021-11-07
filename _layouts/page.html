@@ -1,0 +1,11 @@
+{%if page.id == "topics"%} {{content}} {{content}} {%for topic in
+site.data.topics%}
+<div class="topic">
+	<h2>{{topic.title}}</h2>
+	{%if topic.pic-url%}
+	<img src="{{topic.pic-url | absolute_url}}" alt="{{topic.title}}" />
+	{%endif%}
+	<p>{{topic.description}}</p>
+	<a href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
+</div>
+{%endfor%} {%else%} {{content}} {%endif%}

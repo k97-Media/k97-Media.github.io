@@ -1,0 +1,17 @@
+[
+	{
+		"title": "HTML",
+		"url": "../topics/html.md",
+		"description": "لەم بابەتە باسی HTML ئەکەین"
+	},
+	{
+		"title": "PYTHON",
+		"url": "../topics/python.md",
+		"description": "لەم بابەتە باسی PYTHON ئەکەین"
+	},
+	{
+		"title": "JAVASCRIPT",
+		"url": "../topics/javascript.md",
+		"description": "لەم بابەتە باسی JAVASCRIPT ئەکەین"
+	}
+]
