@@ -2,16 +2,19 @@
 	{
 		"title": "HTML",
 		"url": "../topics/html.md",
-		"description": "لەم بابەتە باسی HTML ئەکەین"
+		"description": "لەم بابەتەدا باس لە یەکێک لە گرنگترین زمانەکان ئەکەین کە بۆ دروستکردنی وێبسایتەکان بەکاردێت",
+		"pic-url": "../images/topics/html.png"
 	},
 	{
 		"title": "PYTHON",
 		"url": "../topics/python.md",
-		"description": "لەم بابەتە باسی PYTHON ئەکەین"
+		"description": "لەم بابەتەدا باس لە یەکێک لە گرنگتین و بەهێزترین زمانەکانی پڕۆگرامسازی ئەکەین. کە بەکاردێت لە دروستکردنی بەرنامەکان وە هەروەها زانستی داتاکان و ڕۆبۆتەکاندا",
+		"pic-url": "../images/topics/python.png"
 	},
 	{
 		"title": "JAVASCRIPT",
 		"url": "../topics/javascript.md",
-		"description": "لەم بابەتە باسی JAVASCRIPT ئەکەین"
+		"description": "لەم بابەتەدا باس لە یەکێک لە بەهێزترین زمانەکان ئەکەین کە لە دروستکردنی وێبسایت یاخود ئەپڵیکەیشنەکان بەکاردێت",
+		"pic-url": "../images/topics/javascript.png"
 	}
 ]
