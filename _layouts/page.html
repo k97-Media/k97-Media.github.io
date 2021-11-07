@@ -1,4 +1,10 @@
-{%if page.id == "topics"%} {{content}} {%for topic in site.data.topics%}
+<!DOCTYPE html>
+  {%include head.html%}
+<body id="body">
+  <nav>
+    {%include header.html%}
+  </nav>
+  {%if page.id == "topics"%} {{content}} {%for topic in site.data.topics%}
 <div class="topic">
 	<h2>{{topic.title}}</h2>
 	{%if topic.pic-url%}
@@ -8,3 +14,6 @@
 	<a href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
 </div>
 {%endfor%} {%else%} {{content}} {%endif%}
+  {%include footer.html%}
+</body>
+</html>
