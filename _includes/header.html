@@ -1,11 +1,12 @@
-<div class="toogler">
-  <input type="checkbox" name="toogle" id="toogle">
-  <label for="toogle"></label>
-</div>
-
-<div id="navbar">
-  <a href="{{ "" | absolute_url }}/">سەرەکی</a>
-  {% for page in site.pages %}
-      <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
-	{% endfor %}
+<div class="navbar">
+	<div class="toogler">
+		<input type="checkbox" name="toogle" id="toogle" />
+		<label for="toogle"></label>
+	</div>
+	<div class="nav-links">
+		<a href="{{ '' | absolute_url }}">سەرەکی</a>
+		{% for page in site.pages %}
+		<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+		{% endfor %}
+	</div>
 </div>

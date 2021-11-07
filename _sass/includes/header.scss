@@ -1,3 +1,22 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.nav-links {
+		a {
+			font-size: 2rem;
+			margin: 0.5em;
+			&:hover {
+				color: darken($primary-dark, 15%);
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.current-page-link {
+	color: darken($primary-dark, 15%);
+}
 .toogler {
 	input {
 		width: 5rem;
