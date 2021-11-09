@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: $shadow;
 	.nav-links {
 		a {
 			font-size: 1.5rem;

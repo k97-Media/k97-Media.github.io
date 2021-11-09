@@ -13,6 +13,9 @@ $shadow-color-light: #636060;
 $steel: #5c5a5a;
 $dark-white: #c3bcb3;
 
+//styles
+$shadow: 0.01em 0.01em 0.5em 0.01em rgb(173, 171, 171);
+
 // Links
 $link-color: $primary;
 $link-hover-color: lighten($primary, 10%);
@@ -98,7 +101,7 @@ a {
 	background-color: $primary-dark;
 	color: $white;
 	padding: 0.2em;
-	border-radius: .5em;
+	border-radius: 0.5em;
 	&:hover {
 		border: 2px solid $primary-dark;
 		background-color: transparent;

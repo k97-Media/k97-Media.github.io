@@ -14,7 +14,7 @@ body {
 .topic {
 	width: 35%;
 	margin: 0.5em;
-	box-shadow: 0.01em 0.01em 0.5em 0.01em rgb(173, 171, 171);
+	box-shadow: $shadow;
 	padding: 1em;
 	border-radius: 1em;
 	img {
