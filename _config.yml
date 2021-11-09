@@ -16,6 +16,13 @@ sass:
   sass_dir: _sass
   style: compresed
 
+defaults:
+  - scope:
+      path: "topics"
+    values:
+      layout: "topic-page"
+      permalink: "/topic/"
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
