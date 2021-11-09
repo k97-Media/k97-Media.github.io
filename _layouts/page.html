@@ -17,7 +17,7 @@
         </div>
         {%for page in site.pages%}
           {%if page.layout == "topic-page"%}  
-            <a class="btn" href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
+            <a class="btn" href="{{ page.url | absolute_url }}">زیاتر بخوێنەوە</a>
           {%endif%}
         {%endfor%}
       </div>
