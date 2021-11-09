@@ -8,7 +8,7 @@ $flash-success-bg: #84fc84;
 $flash-success-fn: #0c3307;
 $flash-error-bg: #fb6b69;
 $flash-error-fn: #950503;
-$shadow-color: rgb(44, 43, 43);
+$shadow-color: rgba(44, 43, 43, 0.774);
 $shadow-color-light: #636060;
 $steel: #5c5a5a;
 $dark-white: #c3bcb3;
@@ -39,7 +39,7 @@ $secondary-text-font: "Righteus";
 }
 
 .dark-mode {
-	background-color: lighten($black, 5%) !important;
+	background-color: lighten($black, 10%) !important;
 }
 .dark-mode-logo {
 	@include d-shadow-light;
@@ -91,5 +91,17 @@ a {
 		cursor: pointer;
 		color: $primary;
 		transition: all 0.4s ease-in-out;
+	}
+}
+
+.btn {
+	background-color: $primary-dark;
+	color: $white;
+	padding: 0.2em;
+	&:hover {
+		border: 2px solid $primary-dark;
+		background-color: transparent;
+		color: $primary-dark;
+		transition: 0.5s all ease-in-out;
 	}
 }
