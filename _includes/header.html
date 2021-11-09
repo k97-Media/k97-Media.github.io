@@ -6,7 +6,9 @@
 	<div class="nav-links">
 		<a href="{{ '' | absolute_url }}">سەرەکی</a>
 		{% for page in site.pages %}
-		<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+			{%if page.layout == "page"%}
+				<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+			{%endif%}
 		{% endfor %}
 	</div>
 </div>

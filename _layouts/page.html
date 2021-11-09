@@ -15,7 +15,11 @@
           {%endif%}
           <p>{{topic.description}}</p>
         </div>
-        <a class="btn" href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
+        {%for page in site.pages%}
+          {%if page.layout == "topic-page"%}  
+            <a class="btn" href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
+          {%endif%}
+        {%endfor%}
       </div>
     {%endfor%}
   </div>
