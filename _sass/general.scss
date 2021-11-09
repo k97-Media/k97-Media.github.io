@@ -39,7 +39,7 @@ $secondary-text-font: "Righteus";
 }
 
 .dark-mode {
-	background-color: lighten($black, 10%) !important;
+	background-color: lighten($black, 2%) !important;
 }
 .dark-mode-logo {
 	@include d-shadow-light;
@@ -98,6 +98,7 @@ a {
 	background-color: $primary-dark;
 	color: $white;
 	padding: 0.2em;
+	border-radius: .5em;
 	&:hover {
 		border: 2px solid $primary-dark;
 		background-color: transparent;

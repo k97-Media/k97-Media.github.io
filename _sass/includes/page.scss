@@ -1,16 +1,20 @@
 body {
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
 	font-size: 1.5rem;
+}
+
+.topics{
+	margin: 1em auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
 }
 
 .topic {
 	width: 35%;
 	margin: 0.5em;
-	box-shadow: 0.1em 0.1em 0.5em 0.1em $shadow-color;
+	box-shadow: 0.01em 0.01em 0.5em 0.01em rgb(173, 171, 171);
 	padding: 1em;
 	border-radius: 1em;
 	img {

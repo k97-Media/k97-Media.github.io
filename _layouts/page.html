@@ -4,18 +4,22 @@
   <nav>
     {%include header.html%}
   </nav>
-  {%if page.id == "topics"%} {{content}} {%for topic in site.data.topics%}
-  <div class="topic">
-    <h2>{{topic.title}}</h2>
-      <div class="content">
-        {%if topic.pic-url%}
-      <img src="{{topic.pic-url | absolute_url}}" alt="{{topic.title}}" />
-      {%endif%}
-      <p>{{topic.description}}</p>
-    </div>
-    <a class="btn" href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
+  {%if page.id == "topics"%} {{content}} 
+  <div class="topics">
+    {%for topic in site.data.topics%}
+      <div class="topic">
+        <h2>{{topic.title}}</h2>
+          <div class="content">
+            {%if topic.pic-url%}
+          <img src="{{topic.pic-url | absolute_url}}" alt="{{topic.title}}" />
+          {%endif%}
+          <p>{{topic.description}}</p>
+        </div>
+        <a class="btn" href="{{ topic.url | absolute_url }}">زیاتر بخوێنەوە</a>
+      </div>
+    {%endfor%}
   </div>
-  {%endfor%} {%else%} {{content}} {%endif%}
+  {%else%} {{content}} {%endif%}
   {%include footer.html%}
 </body>
 </html>
