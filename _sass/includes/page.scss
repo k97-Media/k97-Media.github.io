@@ -3,11 +3,12 @@ body {
 	font-size: 1.5rem;
 }
 
-.topics{
+.topics {
 	margin: 1em auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	width: 85%;
 }
 
