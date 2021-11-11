@@ -1,0 +1,44 @@
+$small:	576px;
+$medium: 768px;
+$large: 992px;
+
+@media only screen and (max-width: $medium){
+  body{
+    margin: auto;
+    font-size: 1rem !important;
+  }
+  .navbar{
+    flex-wrap: wrap;
+    a{
+      font-size: 1rem !important;
+    }
+  }
+  .topics{
+    flex-direction: column;
+    .topic{
+      width: 85%;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: $small){
+  body{
+    margin: auto;
+    font-size: 1rem !important;
+  }
+  .navbar{
+    flex-direction: column;
+    flex-wrap: wrap;
+    a{
+      font-size: 1rem !important;
+    }
+  }
+  .topics{
+    flex-direction: column;
+    .topic{
+      width: 85%;
+    }
+  }
+}
