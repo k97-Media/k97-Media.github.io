@@ -14,25 +14,31 @@ $steel: #5c5a5a;
 $dark-white: #c3bcb3;
 
 //styles
-$shadow: 0.01em 0.01em 0.5em 0.01em rgb(173, 171, 171);
+$shadow: 0.01em 0.01em 0.5em 0.01em rgb(145, 142, 142);
 
 // Links
 $link-color: $primary;
 $link-hover-color: lighten($primary, 10%);
 
 @font-face {
-	font-family: Goran;
-	src: url(../fonts/KGoran.ttf);
+	font-family: Nrt;
+	src: url(../fonts/NRT-Bd.ttf);
 }
 
 @font-face {
-	font-family: Righteus;
-	src: url(../fonts/Righteous-Regular.ttf);
+	font-family: Rudaw;
+	src: url(../fonts/rudawbold.ttf);
+}
+
+@font-face {
+	font-family: Rudaw_regular;
+	src: url(../fonts/rudawregular2.ttf);
 }
 
 //fonts
-$primary-text-font: "Goran";
-$secondary-text-font: "Righteus";
+$primary-text-font: "Rudaw";
+$secondary-text-font: "Nrt";
+$secondary-text-font-regular: "Rudaw_regular";
 
 // reset default styles
 * {
@@ -59,8 +65,8 @@ body {
 	font-size: 1.2rem;
 	color: $primary-dark;
 	background: $white;
-	max-height: 100%;
 	width: 100%;
+	text-align: center
 }
 
 #logo {
@@ -71,16 +77,14 @@ body {
 	margin-bottom: 2rem;
 }
 
-.container {
+.home-main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 80%;
-	max-height: 70%;
-	margin: 20% auto;
-	text-align: center;
-	height: fit-content;
+	height: 90%;
+	margin: 20vh auto;
 }
 h3 {
 	font-size: 1.8rem;
@@ -108,4 +112,15 @@ a {
 		color: $primary-dark;
 		transition: 0.5s all ease-in-out;
 	}
+}
+
+pre{
+	margin: 0.3em auto;
+	padding: 1em;
+	text-align: left;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: .9rem;
+	background-color: lighten($black, 5%);
+	color: $dark-white;
+
 }

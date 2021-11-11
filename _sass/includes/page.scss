@@ -1,8 +1,3 @@
-body {
-	text-align: center;
-	font-size: 1.5rem;
-}
-
 .topics {
 	margin: 1em auto;
 	display: flex;
@@ -10,10 +5,12 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 85%;
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 .topic {
-	width: 35%;
+	width: 25%;
 	margin: 0.5em;
 	box-shadow: $shadow;
 	padding: 1em;

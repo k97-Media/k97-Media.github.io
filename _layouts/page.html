@@ -4,7 +4,8 @@
   <nav>
     {%include header.html%}
   </nav>
-  {%if page.id == "topics"%} {{content}} 
+  {%if page.id == "topics"%}
+  {{content}}
   <div class="topics">
     {%for topic in site.data.topics%}
       <div class="topic">
