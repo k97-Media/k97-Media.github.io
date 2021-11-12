@@ -2,8 +2,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: $shadow;
-	margin-bottom: 1em;
+	background-color: $white;
+	top: 0;
+	width: 100%;
 	.nav-links {
 		a {
 			font-size: 1.2rem;

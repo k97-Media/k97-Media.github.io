@@ -14,7 +14,6 @@ $shadow-color: #2e2d2d;
 //styles
 $shadow: 0.01em 0.01em 0.5em 0.01em $shadow-color;
 
-$text-shadow: 0.013em .013em $shadow-color;
 
 // Links
 $link-color: $primary;
@@ -49,6 +48,9 @@ $secondary-text-font-regular: "Rudaw_regular";
 
 .dark-mode {
 	background-color: lighten($black, 1%) !important;
+	nav, footer{
+		background-color: $black !important;
+	}
 }
 
 
@@ -58,7 +60,7 @@ body {
 	color: $primary-dark;
 	background: $white;
 	width: 100%;
-	text-align: center
+	text-align: center;
 }
 
 #logo {

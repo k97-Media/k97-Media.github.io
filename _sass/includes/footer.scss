@@ -1,8 +1,10 @@
 footer {
-	box-shadow: $shadow;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0.2em;
 	height: fit-content;
+	bottom: 0;
+	width: 100%;
+	background-color: $white;
 }
