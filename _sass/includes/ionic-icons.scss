@@ -1,0 +1,9 @@
+.ionic-icons {
+	a {
+		font-size: 2rem;
+		margin-top: 1em;
+		&:hover {
+			border-top: 1px solid $primary-dark;
+		}
+	}
+}

@@ -4,6 +4,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{{site.general.title}} | {{page.title}}</title>
+		<link rel="stylesheet"
+		href={{"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+		| relative_url}} />
 		<link
 			rel="icon"
 			type="image/png"
@@ -15,13 +18,5 @@
 		/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="{{ url }}" />
-		<script
-			type="module"
-			src="{{'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js' | relative_url}}"
-		></script>
-		<script
-			nomodule
-			src="{{'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js' | relative_url}}"
-		></script>
 	</head>
 </html>
