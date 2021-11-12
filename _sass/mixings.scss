@@ -4,13 +4,5 @@
 		1px 5px 1px $primary-dark, 1px 6px 1px $primary-dark,
 		1px 7px 1px $primary-dark, 1px 8px 1px $primary-dark,
 		1px 9px 1px $primary-dark, 1px 10px 1px $primary-dark,
-		1px 18px 6px $shadow-color;
-}
-
-@mixin d-shadow-light{ 
-	text-shadow: 1px 1px 1px $primary-dark, 1px 2px 1px $primary-dark,
-		1px 3px 1px $primary-dark, 1px 4px 1px $primary-dark,
-		1px 5px 1px $primary-dark, 1px 6px 1px $primary-dark,
-		1px 7px 1px $primary-dark, 1px 8px 1px $primary-dark,
-		1px 15px 6px $shadow-color-light !important;
+		1px 13px 6px $shadow-color;
 }

@@ -1,7 +1,7 @@
 .social-icons {
 	a {
-		font-size: 2rem;
-		margin-top: 1em;
+		font-size: 1.7rem;
+		text-shadow: $shadow;
 		&:hover {
 			border-top: 1px solid $primary-dark;
 		}
