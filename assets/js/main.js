@@ -1,4 +1,6 @@
 const navLinks = document.querySelector(".nav-links");
+const navbar = document.querySelector(".navbar");
+const footer = document.querySelector("footer");
 
 if (navLinks.children.length > 0) {
 	const linksArr = Array.from(navLinks.children);
@@ -10,14 +12,14 @@ if (navLinks.children.length > 0) {
 }
 
 const scrollFunction = (elementScroll) => {
-	const navbar = document.querySelector(".navbar");
-	const footer = document.querySelector("footer");
 	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
 		navbar.classList.remove("pop-in");
 		navbar.classList.add("pop-out");
+		footer.querySelector("button").style.display = "block";
 	} else {
 		navbar.classList.remove("pop-out");
 		navbar.classList.add("pop-in");
+		footer.querySelector("button").style.display = "none";
 	}
 	if (
 		elementScroll.scrollHeight - elementScroll.scrollTop <=
@@ -32,6 +34,9 @@ const scrollFunction = (elementScroll) => {
 };
 
 let lastPos = 0;
+footer
+	.querySelector("button")
+	.addEventListener("click", () => (document.documentElement.scrollTop = 0));
 
 window.onscroll = (event) => {
 	let elementScroll = event.target.scrollingElement;
