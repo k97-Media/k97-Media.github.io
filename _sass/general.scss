@@ -14,7 +14,6 @@ $shadow-color: #2e2d2d;
 //styles
 $shadow: 0.01em 0.01em 0.5em 0.01em $shadow-color;
 
-
 // Links
 $link-color: $primary;
 $link-hover-color: lighten($primary, 10%);
@@ -48,11 +47,11 @@ $secondary-text-font-regular: "Rudaw_regular";
 
 .dark-mode {
 	background-color: lighten($black, 1%) !important;
-	nav, footer{
+	nav,
+	footer {
 		background-color: $black !important;
 	}
 }
-
 
 body {
 	font-family: $primary-text-font;
@@ -108,13 +107,23 @@ a {
 	}
 }
 
-pre{
+pre {
 	margin: 0.3em auto;
 	padding: 1em;
 	text-align: left;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: .9rem;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.9rem;
 	background-color: lighten($black, 5%);
 	color: $dark-white;
+}
 
+.pop-out {
+	box-shadow: $shadow;
+	position: fixed;
+	transition: all 0.4s ease-in-out;
+}
+.pop-in {
+	box-shadow: none;
+	position: relative;
+	transition: all 0.4s ease-in-out;
 }
