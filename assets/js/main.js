@@ -21,10 +21,11 @@ const scrollFunction = (elementScroll) => {
 	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
 		navbar.classList.remove("pop-in");
 		navbar.classList.add("pop-out");
-		footer.querySelector("button").style.display = "block";
+		addShadow(navbar)
 	} else {
 		navbar.classList.remove("pop-out");
 		navbar.classList.add("pop-in");
+
 		footer.querySelector("button").style.display = "none";
 	}
 	if (
@@ -42,9 +43,6 @@ const scrollFunction = (elementScroll) => {
 };
 
 let lastPos = 0;
-footer
-	.querySelector("button")
-	.addEventListener("click", () => (document.documentElement.scrollTop = 0));
 
 window.onscroll = (event) => {
 	let elementScroll = event.target.scrollingElement;
