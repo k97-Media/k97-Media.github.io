@@ -10,7 +10,7 @@
 			font-size: 1.2rem;
 			margin: 1em;
 			&:hover {
-				color: darken($primary-dark, 15%);
+				color: darken($primary, 15%);
 				text-decoration: underline;
 			}
 		}
@@ -24,7 +24,7 @@
 	input {
 		width: 4rem;
 		height: 1rem;
-		margin: .5rem;
+		margin: 0.5rem;
 		background: $black;
 		appearance: none;
 		-moz-appearance: none;
@@ -35,8 +35,8 @@
 		&::after {
 			content: "";
 			position: absolute;
-			height: .9rem;
-			width: .9rem;
+			height: 0.9rem;
+			width: 0.9rem;
 			border-radius: 50%;
 			background: $primary;
 			transform: translate(0.04rem, 0.1rem);

@@ -56,7 +56,7 @@ $secondary-text-font-regular: "Rudaw_regular";
 body {
 	font-family: $primary-text-font;
 	font-size: 1.2rem;
-	color: $primary-dark;
+	color: $primary;
 	background: $white;
 	width: 100%;
 	text-align: center;
@@ -84,7 +84,7 @@ h3 {
 }
 
 a {
-	color: $primary-dark;
+	color: $primary;
 	text-decoration: none;
 	font-family: $secondary-text-font;
 	&:hover {
@@ -95,14 +95,14 @@ a {
 }
 
 .btn {
-	background-color: $primary-dark;
+	background-color: $primary;
 	color: $white;
 	padding: 0.2em;
 	border-radius: 0.5em;
 	&:hover {
-		border: 2px solid $primary-dark;
+		border: 2px solid $primary;
 		background-color: transparent;
-		color: $primary-dark;
+		color: $primary;
 		transition: 0.5s all ease-in-out;
 	}
 }
