@@ -1,9 +1,8 @@
 .social-icons {
 	a {
 		font-size: 1.7rem;
-
 		&:hover {
-			border-top: 1px solid $primary;
+			color: darken($primary, 20%);
 		}
 	}
 }
