@@ -11,6 +11,12 @@ if (navLinks.children.length > 0) {
 	});
 }
 
+const addShadow = (element) => {
+	localStorage.getItem("theme") == "dark" ?
+		element.style.boxShadow = "0.01em 0.01em 0.5em 0.01em #fd7014"
+		: element.style.boxShadow = "0.01em 0.01em 0.5em 0.01em #2e2d2d"
+}
+
 const scrollFunction = (elementScroll) => {
 	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
 		navbar.classList.remove("pop-in");
