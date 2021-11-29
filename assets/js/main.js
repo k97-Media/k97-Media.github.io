@@ -33,9 +33,11 @@ const scrollFunction = (elementScroll) => {
 	) {
 		footer.classList.remove("pop-out");
 		footer.classList.add("pop-in");
+		footer.style.boxShadow = "none"
 	} else {
 		footer.classList.remove("pop-in");
 		footer.classList.add("pop-out");
+		addShadow(footer)
 	}
 };
 
