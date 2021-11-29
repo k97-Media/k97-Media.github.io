@@ -48,7 +48,7 @@ $secondary-text-font-regular: "Rudaw_regular";
 	color: $white !important;
 	nav,
 	footer {
-		background-color: lighten($black, 3%) !important;
+		background-color: $black !important;
 	}
 	.topic {
 		background-color: $steel;

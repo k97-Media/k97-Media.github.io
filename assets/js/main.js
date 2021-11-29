@@ -25,8 +25,7 @@ const scrollFunction = (elementScroll) => {
 	} else {
 		navbar.classList.remove("pop-out");
 		navbar.classList.add("pop-in");
-
-		footer.querySelector("button").style.display = "none";
+		navbar.style.boxShadow = "none"
 	}
 	if (
 		elementScroll.scrollHeight - elementScroll.scrollTop <=
